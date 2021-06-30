@@ -1,0 +1,12 @@
+* Subcircuit ua741
+.subckt ua741 net-_ein1-pad3_ net-_ein1-pad4_ net-_rout1-pad1_ 
+* /home/manpa/downloads/esim-2.1/library/subcircuitlibrary/ua741/ua741.cir
+rout1  net-_rout1-pad1_ net-_eout1-pad1_ 75
+eout1  net-_eout1-pad1_ gnd net-_cbw1-pad1_ gnd 1
+cbw1  net-_cbw1-pad1_ gnd 31.85e-9
+rbw1  net-_cbw1-pad1_ net-_ein1-pad1_ 0.5e6
+ein1  net-_ein1-pad1_ gnd net-_ein1-pad3_ net-_ein1-pad4_ 100e3
+rin1  net-_ein1-pad3_ net-_ein1-pad4_ 2e6
+* Control Statements
+
+.ends ua741

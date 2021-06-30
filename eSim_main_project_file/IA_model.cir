@@ -1,0 +1,29 @@
+* /home/manpa/eSim-Workspace/IA_model/IA_model.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Wed Jun 30 17:35:42 2021
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+Q1  Vdd Net-_Q1-Pad2_ Net-_Q1-Pad3_ eSim_PNP		
+Q3  Vdd Net-_Q1-Pad2_ Net-_C1-Pad1_ eSim_PNP		
+Q2  Net-_Q2-Pad1_ Net-_Q2-Pad2_ GND eSim_NPN		
+Q4  Net-_Q4-Pad1_ Net-_Q4-Pad1_ Net-_Q4-Pad3_ eSim_NPN		
+Q5  Net-_Q4-Pad3_ Net-_Q4-Pad3_ GND eSim_NPN		
+C1  Net-_C1-Pad1_ out 232f		
+U1  in1 in2 out PORT		
+X2  Net-_Q1-Pad3_ in1 Net-_Q1-Pad2_ ua741		
+X1  Net-_Q2-Pad1_ in2 Net-_Q2-Pad2_ ua741		
+X3  Net-_Q4-Pad1_ Net-_C1-Pad1_ out ua741		
+U2  in1 plot_v1		
+U3  in2 plot_v1		
+U4  out plot_v1		
+v2  in1 GND sine		
+v1  in2 GND sine		
+v3  Vdd GND DC		
+R1  Net-_Q1-Pad3_ Net-_Q2-Pad1_ 2.5k		
+R2  Net-_Q4-Pad1_ Vdd 46k		
+R3  Net-_C1-Pad1_ out 250k		
+
+.end

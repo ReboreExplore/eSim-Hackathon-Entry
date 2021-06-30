@@ -1,0 +1,17 @@
+* /home/manpa/Downloads/eSim-2.1/library/SubcircuitLibrary/ua741/ua741.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Tue Jun 29 22:05:07 2021
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U1  Net-_Ein1-Pad3_ Net-_Ein1-Pad4_ Net-_Rout1-Pad1_ PORT		
+Rout1  Net-_Rout1-Pad1_ Net-_Eout1-Pad1_ 75		
+Eout1  Net-_Eout1-Pad1_ GND Net-_Cbw1-Pad1_ GND 1		
+Cbw1  Net-_Cbw1-Pad1_ GND 31.85e-9		
+Rbw1  Net-_Cbw1-Pad1_ Net-_Ein1-Pad1_ 0.5e6		
+Ein1  Net-_Ein1-Pad1_ GND Net-_Ein1-Pad3_ Net-_Ein1-Pad4_ 100e3		
+Rin1  Net-_Ein1-Pad3_ Net-_Ein1-Pad4_ 2e6		
+
+.end
