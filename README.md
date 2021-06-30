@@ -27,8 +27,8 @@ My submission for the e-Sim: Circuit Design and Simulation Marathon, organized b
 
     - c. A new project is then created which uses the new opamp as a *component*. After adding all the components  sinosoidal inputs were provided (*since biomedical signals cannot be mimicked*) and plots were placed at the inputs and the outputs to visualize it in the simulation. This process is followed by annotating the circuit,doing electrical checks and generating netlist for the circuit.
 
-    - d. The kikad to ngspice conversion is initiated. The .lib files and the subcircuit files from the "~/eSim-2.1/library/deviceModelLibrary/Transistor/PNP.lib" and "~/eSim-2.1/library/SubcircuitLibrary/ua741" was provided and added it under the DeviceModelling and Subcircuits tab. The input signal parameters are also provided here for the conversion to occur.
-    (*In the repository I have provided the .lib and subcircuit files externally in the DeviceModelLibrary and Subcircuits directory*))
+    - d. The kikad to ngspice conversion is initiated. The .lib files and the subcircuit files from the "../eSim-2.1/library/deviceModelLibrary/Transistor/PNP.lib" and "../eSim-2.1/library/SubcircuitLibrary/ua741" was provided and added it under the DeviceModelling and Subcircuits tab. The input signal parameters are also provided here for the conversion to occur.
+    (*In the repository I have provided the .lib and subcircuit files externally in the DeviceModelLibrary and Subcircuits directory*)
 
     - e. A simulation of the input and the outputs waveforms are generated.The circuit very well amplifies the millivolts input signals to the range of Volts which is suitable for further processing.
 
